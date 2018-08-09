@@ -4,12 +4,5 @@ server:
 spring:
   application:
     name: sample-api
-  cloud:
-    config:
-      uri: http://localhost:8761
-#      uri: http://config-server:8888
-#      server:
-#        git:
-#          uri: https://github.com/poscoict-glueframework/template-config.git
-#  profiles:
-#    active: vdi
+  profiles:
+    active: vdi
