@@ -1,8 +1,8 @@
-server:
-  port: 8180
-
 spring:
   application:
     name: sample-api
+  cloud:
+    config:
+    uri: @configServerUri@
   profiles:
-    active: vdi
+    active: @env@
